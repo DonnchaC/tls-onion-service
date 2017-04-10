@@ -3,7 +3,7 @@
 This tool allows you to run an onion service and make it available over TLS for non-Tor users
 via LetsEncrypt and the [OnionGateway](https://github.com/DonnchaC/oniongateway) proxy.
 
-By default the tool uses the OnionGateway service running on https://oniongateway.com. A very limited
+By default the tool uses the OnionGateway service running on https://oniongate.com. A very limited
 number of onion addresses are supported on this domain as it is not currently listed in the
 Public Suffic List. Future production deployments will be in the Public Suffix List and enforce TLS
 via the HSTS preload list.
