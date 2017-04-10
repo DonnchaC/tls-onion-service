@@ -168,16 +168,7 @@ def main():
     server.start()
 
     # Start the HTTP server for direct connections to the onion address
-    http_server = create_server_thread(port=args.http_port)
-    http_server.daemon = True
-    http_server.start()
-
-    try:
-        logger.info("Running web servers in the background..")
-        while True:
-            pass
-    except KeyboardInterrupt:
-        logger.info("Interrupt detected, shutting down.")
+    app.run(port=args.http_port)
 
 if __name__ == "__main__":
     main()
